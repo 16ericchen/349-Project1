@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Battle</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='stylesheets/submission-style.css')}}">
+    </head>
+<body>
+
+    <div>
+        <a class="gofood" href="{{url_for('index')}}">Food Battle</a>
+    </div>
+<section class= "move-down">
+<header class= "main-header">
+    <h1 class= "header" > Food Battle </h1>  
+</header>
+
+<div class="footer">
+
+    <p class="font">NOTE: 
+        please update the food picture, name and the email.
+    </p>
+    <p>
+        <form action="/" method = "POST" enctype="multipart/form-data">
+        <label for="name">
+        <span class="font">Name:</span>
+        <input  type="text" name="username" id="username" required >  
+        </label>
+    </p>
+    <p>
+        <label for="mail">
+        <span class="font">E-mail:</span>
+        <input type="text" name="usermail" id="usermail" required>
+        </label>
+    </p>
+    <p>
+        <label for="mail">
+        <span class="font">Food-Name:</span>
+        <input type="text" name="foodtyp" id="foodtyp" required>
+        
+        </label>
+    </p>
+    <label for = "image">
+    <span class = "font"> Submit Photo</span>
+    <input type="file" name="upload" id ="upload" required>
+    <button class="submitbutton" type ="submit">Submit</button>
+    </label>
+        </form>
+    <p>
+    </div>
+    </p>
+</div>
+</section>
+</body>
+</html>

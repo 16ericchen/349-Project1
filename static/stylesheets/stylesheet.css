@@ -1,0 +1,152 @@
+.main-header{
+    flex: 0 1 auto;
+}
+.Subtitle{
+    flex: 0 1 auto; 
+}
+.food-image-container{
+    flex: 1 1 center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.detail-image-frame{
+    position: relative;
+    text-align: center;
+}
+.detail-image{
+    min-width: 250px;
+    min-height: 250px;
+    padding: 13px;
+    display: inline-block;
+}
+.detail-image-title{
+    position: absolute;
+    bottom: -16px;
+    left: 20px;
+    font-family: airstreamregular;
+    color: rgb(0, 0, 0);
+    text-shadow: rgba(0, 0, 0, 0.9) 15px 18px 30px;
+    font-size: 3em;
+}
+.img-name{
+    font-family: airstreamregular;
+    font-size: 3em;
+    text-shadow: rgba(0, 0, 0, 0.9) 15px 18px 30px;
+}
+.button{
+    font-size: 20px;
+    font-family: airstreamregular;
+    border: rgb(0, 0, 0);
+    background: rgb(252, 252, 252);
+    position: absolute;
+    top:150%;
+    left: 30%;
+}
+.button:hover{
+    opacity: 0.8;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    background: rgb(37, 172, 132);
+}
+.undertitle{
+    background: white;
+    font-family: lakeshore;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px; 
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 10px;
+}
+.header{
+    font-family: lakeshore;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px; 
+}
+.chattitle{
+    font-family: lakeshore;
+    text-align: center;
+    font-size: 20px;
+}
+
+@font-face{
+    font-family: 'lakeshore';
+    src: url('fonts/LAKESHOR-webfont.eot');
+    src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opnetype'),
+    url('fonts/LAKESHOR-webfont.woff') format('woff'),
+    url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+    url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'airstreamregular';
+    src: url('fonts/Airstream-webfont.eot');
+    src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opnetype'),
+    url('fonts/Airstream-webfont.woff') format('woff'),
+    url('fonts/Airstream-webfont.ttf') format('truetype'),
+    url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ul {
+    list-style-type: none;
+}
+.comment-box {
+    width: 70%;
+    height: 50px;
+    margin-left: 40px;
+    margin-right: 70px;
+    font-size:18px;
+}
+.add-btn {
+    width: 80px;
+    margin-left: 190px;
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: #5b0de6;
+    color: white;
+}
+.comment-handle {
+    color:blue;
+    margin-top:20px;
+    text-decoration:underline;
+}
+.name-handle {
+    width: 80px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.hr{
+    color:rgba(0,0,0,0.15);
+    width:600px;
+}
+.comment-header {
+    display:flex;
+    width:50%;
+    justify-content:space-between;
+    font-size:25px;
+}
+.comment-input-row {
+    display:flex;
+    margin-top:20px;
+    margin-bottom:10px;
+    font-size:25px;
+}
+.chat{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(138, 233, 14);
+}
+.move-down{
+    position: absolute;
+    top:80%;
+    left: 42%;
+}

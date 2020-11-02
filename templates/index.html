@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Battle</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static',filename='stylesheets/stylesheet.css')}}">
+    <script src="{{ url_for('static',filename='scripts/main.js')}}"></script>
+</head>
+<body>
+<header class = "main-header">
+   <a class="header" href="{{url_for('submission')}}">Home</a>   
+</header>
+<header class = "Subtitle">
+     <h2 class = "undertitle ">Food Battle</h2>
+</header>
+<section>
+    <div class= "food-image-container">
+        <div class="detail-image-frame" data-image-role="frame">
+            <img class="detail-image" data-image-role="target" src="{{ url_for('static',filename=row1[3])}}" alt="">
+            <span class="detail-image-title" data-image-role="title">{{ row1[2] }}, Submitted by: {{row1[0]}}</span>
+        </div>
+        <div class= "food-image-container">
+            <div class="detail-image-frame" data-image-role="frame">
+                <img class="detail-image" data-image-role="target" src="{{ url_for('static',filename=row2[3])}}" alt="">
+                <span class="detail-image-title" data-image-role="title">{{row2[2]}}, Submitted by: {{row2[0]}}</span>
+            </div>
+        </div>
+        </div>       
+</section>
+<div class="move-down">
+<h1>Comment Widget</h1>
+	<div class = "chat">
+		<div style="display:flex;margin-bottom:10px;">
+			<div>
+				<input type="text" placeholder="Name" id="name" class="name-handle"/>
+			</div>
+			<div>
+				<input type="text" placeholder="handle" id="handle" class="name-handle"/>
+			</div>
+		</div>
+		<div>
+			<textarea rows="5" id="comment" class="comment-box" placeholder="Join the discussion...."></textarea>
+			<div>
+				<button id="add-comment" class="add-btn">Add</button>
+			</div>
+		</div>
+		<h3>Comments</h3>
+		<ul id="commentsList">
+		</ul>
+    </div>
+</div>
+</body>
+</html>

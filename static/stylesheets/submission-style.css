@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    background: rgb(37, 172, 132);
+}
+.footer{
+    text-align: center;
+}
+
+.main-header{
+    flex: 0 1 auto;
+}
+.gofood{
+    font-size:30px;
+    text-transform: uppercase;
+    font-family: cursive;
+    color:blue;
+}
+.header{
+    width: 790px;
+    background: white;
+    font-family: lakeshore;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 365px;
+    margin-right: 365px;
+    margin-top: 10px;
+    font-size: 30px; 
+}
+.move-down{
+    position: absolute;
+    top: 30%;
+}
+.buttonclass{
+    display: flex;
+}
+.submitbutton{
+    font-size: 18px;
+    font-family: lakeshore;
+    border: rgb(0, 0, 0);
+    background: rgb(238, 238, 238);
+    top: 150%;
+    left: 30%;
+}
+.submitbutton:hover{
+    opacity: 0.8;
+}
+.font{
+    font-family: lakeshore;
+    font-size: 20px;
+}
+@font-face{
+    font-family: 'lakeshore';
+    src: url('fonts/LAKESHOR-webfont.eot');
+    src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opnetype'),
+    url('fonts/LAKESHOR-webfont.woff') format('woff'),
+    url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+    url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
